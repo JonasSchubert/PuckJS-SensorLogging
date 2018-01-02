@@ -23,7 +23,7 @@ Puck.getBatteryPercentage();
 
 //Code for NFC - Near field communication
 /*
-NRF.nfcURL("http://12.168.178.22");
+NRF.nfcURL("http://192.168.178.25");
 */
 
 //Code for iBeacons
@@ -39,18 +39,25 @@ NRF.setAdvertising([
   require("ble_ibeacon").get({
     uuid: [0, 2, 0, 1, 1, 9, 9, 0, 0, 2, 0, 1, 1, 9, 9, 0]
   }),
-  require("ble_eddystone").get("192.168.178.22")
+  require("ble_eddystone").get("192.168.178.25")
   ], {interval:250});
 */
 
-//Advertise temperature, light and battery percentage via NRF
 //Broadcast LucaHome IP
-NRF.nfcURL("http://12.168.178.22");
+// NRF.nfcURL("http://192.168.178.25");
+
+//Places of the PuckJS in my flat
+var places = ["Hall", "Bath", "Sleeping_Room", "Living_Room", "Kitchen"];
+
+//Advertise place, temperature, light, battery percentage and mag values via NRF
 setInterval(function() {
    NRF.setAdvertising({
+     0x1799: [places[0]],
      0x1809: [Math.round(E.getTemperature())],
      0x1819: [Puck.light() * 100],
      0x1829: [Puck.getBatteryPercentage()],
-     0x1839: [Puck.mag()]	// Wrong format... TODO: Needs to be improved
+     0x1840: [Puck.mag().x],
+     0x1841: [Puck.mag().y],
+     0x1842: [Puck.mag().z]
   });
 }, 30000);
