@@ -47,18 +47,17 @@ NRF.setAdvertising([
 // NRF.nfcURL("http://192.168.178.25");
 
 //Places of the PuckJS in my flat
-var places = ["Hall", "Bath", "Sleeping_Room", "Living_Room", "Kitchen"];
+//var places = ["Hall", "Bath", "Sleeping_Room", "Living_Room", "Kitchen"];
 
 //Advertise place, temperature, light, battery percentage and mag values via NRF
 setInterval(function() {
-  var magValue = Pick.mag();
+  var magValue = Puck.mag();
   var magString = "x: " + String(magValue.x) + "&y:" + String(magValue.y) + "&z:" + String(magValue.z);
-    
-   NRF.setAdvertising({
-     0x1799: [places[0]],
-     0x1809: [Math.round(E.getTemperature())],
-     0x1819: [Puck.light() * 100],
-     0x1829: [Puck.getBatteryPercentage()],
-     0x1839: [magString]
+  // Max advertising values are four (!?)
+  NRF.setAdvertising({
+    0x1809: [Math.round(E.getTemperature())],
+    0x1819: [Puck.light() * 100],
+    0x1829: [Puck.getBatteryPercentage()],
+    0x1839: [magString]
   });
 }, 30000);
