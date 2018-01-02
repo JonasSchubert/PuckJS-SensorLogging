@@ -60,4 +60,5 @@ setInterval(function() {
     0x1829: [Puck.getBatteryPercentage()]//,
     //0x1839: [magString]
   });
+  console.log("advertised");
 }, 30000);
