@@ -51,13 +51,13 @@ NRF.setAdvertising([
 
 //Advertise place, temperature, light, battery percentage and mag values via NRF
 setInterval(function() {
-  var magValue = Puck.mag();
-  var magString = "x: " + String(magValue.x) + "&y:" + String(magValue.y) + "&z:" + String(magValue.z);
+  //var magValue = Puck.mag();
+  //var magString = "x: " + String(magValue.x) + "&y:" + String(magValue.y) + "&z:" + String(magValue.z);
   // Max advertising values are four (!?)
   NRF.setAdvertising({
     0x1809: [Math.round(E.getTemperature())],
     0x1819: [Puck.light() * 100],
-    0x1829: [Puck.getBatteryPercentage()],
-    0x1839: [magString]
+    0x1829: [Puck.getBatteryPercentage()]//,
+    //0x1839: [magString]
   });
 }, 30000);
