@@ -2,10 +2,11 @@
 
 [![Platform](https://img.shields.io/badge/platform-PuckJS-yellow.svg)](http://www.puck-js.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-<a target="_blank" href="https://www.paypal.me/GuepardoApps" title="Donate using PayPal"><img src="https://img.shields.io/badge/paypal-donate-blue.svg" /></a>
+[![Donate: PayPal](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/GuepardoApps)
 
-[![Build](https://img.shields.io/badge/build-success-green.svg)](./blob/master/code.js)
-[![Version](https://img.shields.io/badge/version-v0.1.0.191010-blue.svg)](./blob/master/code.js)
+[![Build](https://img.shields.io/badge/build-success-green.svg)](./code.js)
+[![Version](https://img.shields.io/badge/version-v0.1.0.191010-blue.svg)](./code.js)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 ## Home Assistant
 
