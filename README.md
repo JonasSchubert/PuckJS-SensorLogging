@@ -5,7 +5,7 @@
 [![Donate: PayPal](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/GuepardoApps)
 
 [![Build](https://img.shields.io/badge/build-success-green.svg)](./code.js)
-[![Version](https://img.shields.io/badge/version-v0.1.0.191010-blue.svg)](./code.js)
+[![Version](https://img.shields.io/badge/version-v0.1.1.191015-blue.svg)](./code.js)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 ## Home Assistant
