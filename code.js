@@ -1,4 +1,7 @@
 /**
+ * https://www.bluetooth.com/specifications/gatt/characteristics/
+ * https://www.bluetooth.com/specifications/gatt/declarations/
+ * https://www.bluetooth.com/specifications/gatt/descriptors/
  * https://www.bluetooth.com/specifications/gatt/services/
  * https://github.com/reelyactive/puckyactive-firmware/blob/master/eddystone-tlm.js
  */
