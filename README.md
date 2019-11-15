@@ -12,7 +12,7 @@
 
 PuckJs-Beacons are now integrated into my [Home Assistant](https://www.home-assistant.io/) using the integration for [Eddystones](https://www.home-assistant.io/integrations/eddystone_temperature/) to read out the values.
 
-## Archived
+## Future
 
 Originally planned as part of the LucaHome-Project.
 JavaScript to control a PuckJS. Shall read out battery, temperature, light and magnetometer to broadcast via bluetooth LE.
@@ -20,6 +20,12 @@ Further plans were:
 -	provide LucaHome Website IP via NFC and BLE
 -	use a number of PuckJS to provide indoor navigation for an android application
 -	possible IR control of TV
+
+## Contributors
+
+| [<img alt="JonasSchubert" src="https://avatars0.githubusercontent.com/u/21952813?v=4&s=117" width="117"/>](https://github.com/JonasSchubert) |
+| :---------------------------------------------------------------------------------------------------------------------------------------: |
+| [Jonas Schubert](https://github.com/JonasSchubert) |
 
 ## License
 
